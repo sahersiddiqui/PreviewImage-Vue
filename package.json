@@ -1,6 +1,6 @@
 {
   "name": "preview-image-vue",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "It will select and displays the image",
   "main": "index.js",
   "scripts": {},
