@@ -1,0 +1,25 @@
+{
+  "name": "previewimage",
+  "version": "1.0.0",
+  "description": "It will select and displays the image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-runtime": "^6.26.0",
+    "recursive-copy": "^2.0.10",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "babel-plugin-component": "^1.1.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-cli": "^3.2.3"
+  },
+  "author": "saher siddiqui",
+  "license": "ISC"
+}
