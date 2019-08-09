@@ -34,7 +34,7 @@ export default {
   methods: {
     previewImageFn(input) {
       this.file = URL.createObjectURL(input.target.files[0]);
-      this.imageUrl = URL.createObjectURL(input.target.files[0]);
+      this.imageUrl = input.target.files[0];
     }
   }
 };
