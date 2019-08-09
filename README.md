@@ -32,3 +32,6 @@ this will defined under methods
     }
 
 
+#5.
+if you want to display the old image you need to pass the full url in props like this
+      <lq-image :oldImage="you_image_url" />

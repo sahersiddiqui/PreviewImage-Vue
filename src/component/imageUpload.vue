@@ -2,6 +2,7 @@
   <el-form-item label="Upload Image" prop="image">
     <div class="selectImage" @click="$refs.fileInput.click()">
       <el-image v-if="file" :src="file" :fit="fit" style="width: 100px; height: 100px"></el-image>
+      <el-image v-else-if="oldImage" :src="oldImage" :fit="fit" style="width: 100px; height: 100px"></el-image>
       <i v-else class="el-icon-plus icon"></i>
       <input accept="image/*" class="file" type="file" @change="previewImageFn" ref="fileInput" />
     </div>
@@ -16,6 +17,10 @@ export default {
     fit: {
       type: String,
       default: "cover"
+    },
+    oldImage: {
+      type: String,
+      default: ""
     }
   },
   data() {
