@@ -1,24 +1,34 @@
 # PreviewImage-Vue
 
-1.
+#1.
 run 
 npm i preview-image-vue
 OR
 yarn add preview-image-vue
 
 
-2.
+#2.
 update your main.js or index.js file
 add 
 import ImagePreview from 'preview-image-vue'
 Vue.use(ImagePreview)
 
 
-3.
+#3.
 In your vue file use it as
-<lq-image-preview @image-change="imageChanged" />
-then add a method like
+<lq-image-preview />
 
-imageChanged(value) {
-    YOUR_FORM_VALUE = value;
-}
+It uses inject/provide so you need to use provide that will return a method update you formdata like thi
+ provide() {
+    return {
+      image: this.imageChanged
+    };
+  },
+
+#4.
+this will defined under methods
+  imageChanged: function(value) {
+      this.form.previewImage = value;
+    }
+
+
